@@ -30,6 +30,7 @@ $(function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url).not.toBe(null);
+                expect(feed.url).not.toBe('');
             });
 
         });
@@ -45,6 +46,7 @@ $(function() {
             allFeeds.forEach(function(feed) {
                 expect(feed.name).toBeDefined();
                 expect(feed.name).not.toBe(null);
+                expect(feed.name).not.toBe('');
             });
         });
 
